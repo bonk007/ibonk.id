@@ -1,11 +1,15 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+/* @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"); */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Playfair+Display&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  html {
+    /* @apply antialiased */
+    font-family: 'Playfair Display', serif;
+  }
   body {
     @apply text-black dark:text-gray-100
   }
@@ -13,7 +17,7 @@
 
 .material-symbols-outlined {
    font-variation-settings:
-       'wght' 400,
-       'GRAD' 0,
-       'opsz' 24
+       "wght" 400,
+       "GRAD" 0,
+       "opsz" 24
 }

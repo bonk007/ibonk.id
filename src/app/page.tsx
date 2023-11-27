@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import dynamic from "next/dynamic";
 import careers from "@/resources/careers.json";
+import skills from "@/resources/skills.json";
 
 const ThemeChanger = dynamic(() => import('@/components/ThemeChanger'), { ssr: false })
 const Home = () => {
@@ -31,11 +32,25 @@ const Home = () => {
                    alt={"something"} />
           </div>
         </div>
-        <div id="skills">
+        <div id="skills" className="mt-8">
           <div className="border-b text-xl">Skills</div>
+          <div className="grid grid-cols-3 gap-4 mt-4">
+            {skills.map((skill, index) => {
+              const { group, skills } = skill;
+              return (
+                  <div className="" key={`s-${index}`}>
+                    <span className="block mb-2 font-[400]">{group}</span>
+                    <div className="flex flex-col gap-3">
+                      {skills.map((skill, index) => (<span className="text-xs" key={`sa-${index}`}>{skill}</span>))}
+                    </div>
+
+                  </div>
+              )
+            })}
+          </div>
         </div>
-        <div id="careers">
-          <div className="border-b text-xl">Careers</div>
+        <div id="careers" className="mt-8">
+          <div className="border-b text-xl mb-4">Careers</div>
           {careers.map((career, index) => {
             const {
               company,
@@ -46,8 +61,13 @@ const Home = () => {
                 details
             } = career;
             return (
-                <div className="flex items-top mb-4" key={`c-${index}`}>
-                  <img alt={company} src={company_logo} width={64} className="block bg-white" />
+                <div className="flex items-start mb-4" key={`c-${index}`}>
+                  <Image alt={company}
+                         src={company_logo}
+                         height={64}
+                         width={96}
+                         style={{objectFit: 'contain'}}
+                         className="block bg-white" />
                   <div className="flex-1 ml-4">
                     <div>
                       <a href={website}
@@ -58,7 +78,17 @@ const Home = () => {
                     <div>{
                       details.map((detail, index) => {
                         return (
-                            <div className="text-sm text-gray-500 dark:text-gray-300" key={`d-${index}`}>{detail.position}</div>
+                            <div className="text-sm text-gray-500 dark:text-gray-300 mt-4" key={`d-${index}`}>
+                              <span className="font-[600]">{detail.position}</span>
+                              {detail.summary ? (<p>{detail.summary}</p>) : null}
+                              <ul className="list-disc list-inside">
+                                {detail.jobs.map((highlight, index) => {
+                                  return (
+                                      <li key={`h-${index}`}>{highlight}</li>
+                                  )
+                                })}
+                              </ul>
+                            </div>
                         )
                       })
                     }</div>

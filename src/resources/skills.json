@@ -1,0 +1,19 @@
+[{
+  "group": "Devops",
+  "skills": ["AWS", "git", "Docker", "Linux"]
+},{
+  "group": "Backend",
+  "skills": ["php", "Laravel", "NextJS"]
+},{
+  "group": "Database",
+  "skills": ["MySQL", "PostgreSQL", "Redis", "Distributed Database", "Clustering Database"]
+},{
+  "group": "Frontend",
+  "skills": ["css", "scss", "javascript", "typescript", "React", "TailwindCSS"]
+},{
+  "group": "Mobile",
+  "skills": ["Android (Kotlin)", "React Native"]
+},{
+  "group": "Project Management",
+  "skills": ["SCRUM", "Agile", "Jira", "Confluence", "Trello"]
+}]
