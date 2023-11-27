@@ -1,0 +1,104 @@
+[{
+  "company": "FAR Capital",
+  "website": "https://www.farcapital.com.my/",
+  "company_logo": "https://farcapital.com.my/wp-content/uploads/2021/12/logo-far-cap-black-01-150x150.png.webp",
+  "start": "September 2023",
+  "end": null,
+  "details": [{
+    "position": "Senior Software Engineer",
+    "summary": "",
+    "jobs": [
+      "Developed and maintained internal tools",
+      "Supervised junior developers",
+      "Supervised Bubble.io developers"
+    ]
+  }]
+},{
+  "company": "Avana - Social Commerce Platform",
+  "website": "https://www.avana.asia/",
+  "company_logo": "https://cms.dailysocial.id/wp-content/uploads/2022/05/Screenshot_2022-05-11-21-00-15-60.png",
+  "start": "April 2021",
+  "end": "April 2023",
+  "details": [{
+    "position": "Tech Lead",
+    "summary": "",
+    "jobs": [
+      "Upgraded Laravel version from 5.7 to 7",
+      "Enhanced server infrastructure in AWS",
+      "Enhanced backend performance that can receive 30k requests/sec",
+      "Managed and supervised global team developers (mobile app, frontend, backend, QA)",
+      "Worked with CEO and COO in creating development roadmap for 2 years"
+    ]
+  }, {
+    "position": "Backend Engineer",
+    "summary": "",
+    "jobs": [
+      "Enhanced performance of some metric APIs",
+      "Developed multi-variation feature",
+      "Supported Customer Service in technical issues",
+      "Maintain existing SaaS application"
+    ]
+  }]
+},{
+  "company": "Finata",
+  "website": "https://www.finata.id/",
+  "company_logo": "https://finata.id/wp-content/uploads/2019/11/logo-1.png",
+  "start": "October 2018",
+  "end": "October 2020",
+  "details": [{
+    "position": "Engineering Manager",
+    "summary": "",
+    "jobs": [
+      "Architected SaaS application for business financial service",
+      "Supervised backend, frontend, and DevOps",
+      "Involves in creating development flow and culture",
+      "Managed 12 developers"
+    ]
+  }]
+},{
+  "company": "Sleekr Accounting",
+  "website": "https://accounting.sleekr.co/",
+  "company_logo": "https://s3.amazonaws.com/studentjob-indonesia/job_posting/job_posting_1480475281_864756.jpg",
+  "start": "August 2016",
+  "end": "October 2018",
+  "details": [{
+    "position": "Senior Fullstack Engineer",
+    "summary": "",
+    "jobs": [
+      "Developed payment gateway integration",
+      "Enhanced subscription and billing feature",
+      "Supervised colleague at Junior level",
+      "Maintain existing application"
+    ]
+  }]
+},{
+  "company": "PT Awakami",
+  "website": "https://kiper.co.id/",
+  "company_logo": "https://image4.owler.com/logo/kiper-cloud-accounting_owler_20160302_231818_large.png",
+  "start": "September 2014",
+  "end": "August 2016",
+  "details": [{
+    "position": "Fullstack Engineer",
+    "summary": "Contributed into Kiper Cloud Accounting, a SaaS application for accounting",
+    "jobs": [
+      "Developed fixed asset management feature",
+      "Developed bank statement reconciliation feature",
+      "Developed accounting feature for manufacture industry",
+      "Maintain existing SaaS application"
+    ]
+  }]
+},{
+  "company": "Sinergi Indonesia",
+  "website": "http://sinergi-indonesia.org/",
+  "company_logo": "https://indorelawan-production.nos.wjv-1.neo.id/uploads/user_avatar/550728d29fb307fc0f64fdac.png?Fri%20Mar%2020%202015%2021:47:23%20GMT+0700%20(SE%20Asia%20Standard%20Time)",
+  "start": "September 2014",
+  "end": "August 2016",
+  "details": [{
+    "position": "Fullstack Engineer",
+    "summary": "",
+    "jobs": [
+      "Developed and maintained crowdfunding web with banking virtual account integration",
+      "Developed and maintained dashboard for SMS gateway with gammu-smsd"
+    ]
+  }]
+}]
