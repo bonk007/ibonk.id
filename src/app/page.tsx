@@ -47,7 +47,6 @@ const Home = () => {
             } = career;
             return (
                 <div className="flex items-top mb-4" key={`c-${index}`}>
-                  {/*<div className={`bg-[url(${company_logo})]`}></div>*/}
                   <img alt={company} src={company_logo} width={64} className="block bg-white" />
                   <div className="flex-1 ml-4">
                     <div>
