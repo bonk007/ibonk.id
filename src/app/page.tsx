@@ -1,17 +1,30 @@
+'use client'
 
 import Image from 'next/image'
 import dynamic from "next/dynamic";
 import careers from "@/resources/careers.json";
 import skills from "@/resources/skills.json";
+import {useTheme} from "next-themes";
 
 const ThemeChanger = dynamic(() => import('@/components/ThemeChanger'), { ssr: false })
 const Home = () => {
-
+  const {theme} = useTheme()
   return (
     <main className="w-[960px] mx-auto my-4">
       <div className="flex flex-col w-3/4 mx-auto">
-        <div className="flex justify-between">
-          <div></div>
+        <div className="flex justify-between my-4">
+          <div className="text-sm flex gap-2">
+            <a href="mailto:bonk007@gmail.com" target="_blank"><span className="material-symbols-outlined">mail</span></a>
+            <a href="https://linkedin.com/in/bonk007" target="_blank">
+              {theme === 'dark' ? (<Image src="/linkedin-white.svg" alt="LinkedIn" width={24} height={24} />) : <Image src="/linkedin.svg" alt="LinkedIn" width={24} height={24} />}
+            </a>
+            <a href="https://github.com/bonk007" target="_blank">
+              {theme === 'dark' ? (<Image src="/github-white.svg" alt="Github" width={24} height={24} />) : <Image src="/github.svg" alt="Github" width={24} height={24} />}
+            </a>
+            <a href="https://wa.me/6282217215033" target="_blank">
+              {theme === 'dark' ? (<Image src="/whatsapp-white.svg" alt="Whatsapp me" width={20} height={20} />) : <Image src="/whatsapp.svg" alt="Whastapp me" width={20} height={20} />}
+            </a>
+          </div>
           <ThemeChanger></ThemeChanger>
         </div>
         <div className="flex items-center">
@@ -97,9 +110,32 @@ const Home = () => {
             )
           })}
         </div>
-        <div id="education">
+        <div id="education" className="mt-8">
           <div className="border-b text-xl">Education</div>
+          <div className="grid grid-cols-3 gap-4 mt-4">
+            <div className="col-span-2">
+              <span className="block font-[400]">Universitas Pendidikan Indonesia</span>
+              <span className="text-xs text-red-900">not graduated</span>
+            </div>
+            <div className="flex flex-col gap-3">
+              <span className="text-xs">2007 - 2014</span>
+              <span className="text-xs">Bandung, Indonesia</span>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-4 mt-4">
+            <div className="col-span-2">
+              <span className="block font-[400]">SMA Negeri 1 Sumber</span>
+              <span className="text-xs">High School</span>
+            </div>
+            <div className="flex flex-col gap-3">
+              <span className="text-xs">2004 - 2007</span>
+              <span className="text-xs">Cirebon, Indonesia</span>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center w-3/4 mx-auto mt-16">
+        <span className="text-sm text-gray-500">Copyright {(new Date()).getFullYear()} | Ayi Muhammad Iqbal Nasuha</span>
       </div>
     </main>
   )
